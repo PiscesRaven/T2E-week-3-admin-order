@@ -1,0 +1,48 @@
+:root {
+    --white: #fff;
+    --Fz-16: 16px;
+    --Fz-24: 24px;
+    --Fz-20: 20px;
+    --Lh-19: 19px;
+    --hue-f2: #f2f2f2;
+    --hue-9b: #9b9b9b;
+    --a-decoration: none;
+}
+
+body {
+    background: var(--hue-f2);
+}
+
+.font-size24 {
+    font-size: 24px;
+}
+
+.font-size19 {
+    font-size: 19px;
+}
+
+#header-bg {
+    background: #000;
+    height: 70px;
+}
+
+#header {
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header-home {
+    color: var(--white);
+    text-decoration: var(--a-decoration);
+}
+
+.menu-list {
+    margin: 0 25px;
+    color: var(--hue-9b);
+}
+
+.menu-list:active {
+    color: var(--white);
+}
