@@ -19,119 +19,137 @@
 <body>
     <header id="header-bg" class="container-fulid">
         <nav id="header" class="row">
-            <a href="index.html" id="header-home" class="font-size24">Shoptime</a>
-            <a href="#" class="font-size19 menu-list">HOME</a>
-            <a href="#" class="font-size19 menu-list">ORDERS</a>
-            <a href="#" class="font-size19 menu-list">PRODUCT</a>
-            <p class="float-right ">ADMIN</p>
+            <ul id="header-ul">
+                <a href="index.html" id="header-home" class="font-size24">Shoptime</a>
+                <li class="header-li">
+                    <a href="#" class="font-size19 menu-list active">HOME</a>
+                </li>
+                <li class="header-li">
+                    <a href="#" class="font-size19 menu-list">ORDERS</a>
+                </li>
+                <li class="header-li">
+                    <a href="#" class="font-size19 menu-list">PRODUCT</a>
+                </li>
+                <li>
+                    <p class="float-right ">ADMIN</p>
+                </li>
+            </ul>
+
         </nav>
     </header>
     <main id="main" class="container">
-        <section id="overview-inof" class="row">
-            <div class="col-12">
-                <div id="home-overview" class="col-12">
-                    <strong>OVERVIEW</strong> date</div>
-                <!-- $總支出 /總花費 /淨收入 -->
-                <dl class="col-4">
-                    <dt>
-                        <i></i>TOTAL REVENUE
-                    </dt>
-                    <dd>0123</dd>
-                </dl>
-                <dl class="col-4">
-                    <dt>
-                        <i></i>TOTAL COST
-                    </dt>
-                    <dd>456</dd>
-                </dl>
-                <dl class="col-4">
-                    <dt>
-                        <i></i>NET INCOME
-                    </dt>
-                    <dd>789</dd>
-                </dl>
-                <!-- Activity 圖表 -->
-                <!-- Transaction Website -->
-                <div class="col-6">
-                    <h1>Transaction Website</h1>
-                    <ul>
-                        <li>
-                            <i></i>.com
-                            <span>123 ↑22% </span>
-                        </li>
-                        <li>
-                            <i></i>.com
-                            <span>123 ↑22% </span>
-                        </li>
-                        <li>
-                            <i></i>.com
-                            <span>123 ↑22% </span>
-                        </li>
-                        <li>
-                            <i></i>.com
-                            <span>123 ↑22% </span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Latest Orders -->
-                <div class="col-6">
-                    <h1>Latest Orders</h1>
-                    <ul>
-                        <li>
-                            <div class="latest-orders">
-                                <img src="" alt="" class="col-3">
-                                <div class="col-9">
-                                    <h4>T-shirt</h4>
-                                    <span>
-                                        <i>2018/06/13</i>
-                                        <p>total</p>
-                                    </span>
-                                    <span>
-                                        <i>Kind</i>
-                                        <p>
-                                            <strong>price</strong>
-                                        </p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="latest-orders">
-                                <img src="" alt="" class="col-3">
-                                <div class="col-9">
-                                    <h4>T-shirt</h4>
-                                    <span>
-                                        <i>2018/06/13</i>
-                                        <p>total</p>
-                                    </span>
-                                    <span>
-                                        <i>Kind</i>
-                                        <p>
-                                            <strong>price</strong>
-                                        </p>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="latest-orders">
-                                <img src="" alt="" class="col-3">
-                                <div class="col-9">
-                                    <h4>T-shirt</h4>
-                                    <span>
-                                        <i>2018/06/13</i>
-                                        <p>total</p>
-                                    </span>
-                                    <span>
-                                        <i>Kind</i>
-                                        <p>
-                                            <strong>price</strong>
-                                        </p>
-                                    </span>
-                                </div>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-
+        <section id="overview-info" class="row">
+            <div class="col-12" id="home-overview">
+                <strong>OVERVIEW</strong> date
             </div>
+            <!-- $總支出 /總花費 /淨收入 -->
+
+            <dl class="col-4">
+                <div class="overview">
+                    <dt class="overview-dt">
+                        <i class="fas fa-hand-holding-usd "> TOTAL REVENUE</i>
+                    </dt>
+                    <dd class="overview-dd">0123</dd>
+                </div>
+            </dl>
+            <dl class="col-4">
+                <div class="overview">
+                    <dt class="overview-dt">
+                        <i class="fas fa-boxes ">TOTAL COST</i>
+                    </dt>
+                    <dd class="overview-dd">456</dd>
+                </div>
+            </dl>
+            <dl class="col-4">
+                <div class="overview">
+                    <dt class="overview-dt">
+                        <i class="fas fa-money-bill-alt">NET INCOME</i>
+                    </dt>
+                    <dd class="overview-dd">789</dd>
+                </div>
+            </dl>
+            <!-- Activity 圖表 -->
+            <!-- Transaction Website -->
+            <div class="col-6">
+                <h1>Transaction Website</h1>
+                <ul>
+                    <li>
+                        <i></i>.com
+                        <span>123 ↑22% </span>
+                    </li>
+                    <li>
+                        <i></i>.com
+                        <span>123 ↑22% </span>
+                    </li>
+                    <li>
+                        <i></i>.com
+                        <span>123 ↑22% </span>
+                    </li>
+                    <li>
+                        <i></i>.com
+                        <span>123 ↑22% </span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Latest Orders -->
+            <div class="col-6">
+                <h1>Latest Orders</h1>
+                <ul>
+                    <li>
+                        <div class="latest-orders">
+                            <img src="" alt="" class="col-3">
+                            <div class="col-9">
+                                <h4>T-shirt</h4>
+                                <span>
+                                    <i>2018/06/13</i>
+                                    <p>total</p>
+                                </span>
+                                <span>
+                                    <i>Kind</i>
+                                    <p>
+                                        <strong>price</strong>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="latest-orders">
+                            <img src="" alt="" class="col-3">
+                            <div class="col-9">
+                                <h4>T-shirt</h4>
+                                <span>
+                                    <i>2018/06/13</i>
+                                    <p>total</p>
+                                </span>
+                                <span>
+                                    <i>Kind</i>
+                                    <p>
+                                        <strong>price</strong>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="latest-orders">
+                            <img src="" alt="" class="col-3">
+                            <div class="col-9">
+                                <h4>T-shirt</h4>
+                                <span>
+                                    <i>2018/06/13</i>
+                                    <p>total</p>
+                                </span>
+                                <span>
+                                    <i>Kind</i>
+                                    <p>
+                                        <strong>price</strong>
+                                    </p>
+                                </span>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
         </section>
     </main>
 
