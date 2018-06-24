@@ -14,6 +14,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -38,116 +39,160 @@
         </nav>
     </header>
     <main id="main" class="container">
-        <section id="overview-info" class="row">
+        <section id="overview-info">
             <div class="col-12" id="home-overview">
                 <strong>OVERVIEW</strong> date
             </div>
             <!-- $總支出 /總花費 /淨收入 -->
+            <div class="row">
+                <dl class="col-4">
+                    <div class="overview">
+                        <dt class="overview-dt">
+                            <i class="fas fa-hand-holding-usd "> TOTAL REVENUE</i>
+                        </dt>
+                        <dd class="overview-dd">0123</dd>
+                    </div>
+                </dl>
+                <dl class="col-4">
+                    <div class="overview">
+                        <dt class="overview-dt">
+                            <i class="fas fa-boxes ">TOTAL COST</i>
+                        </dt>
+                        <dd class="overview-dd total-cost">456</dd>
+                    </div>
+                </dl>
+                <dl class="col-4">
+                    <div class="overview">
+                        <dt class="overview-dt">
+                            <i class="fas fa-money-bill-alt">NET INCOME</i>
+                        </dt>
+                        <dd class="overview-dd net-income">789</dd>
+                    </div>
+                </dl>
+            </div>
 
-            <dl class="col-4">
-                <div class="overview">
-                    <dt class="overview-dt">
-                        <i class="fas fa-hand-holding-usd "> TOTAL REVENUE</i>
-                    </dt>
-                    <dd class="overview-dd">0123</dd>
-                </div>
-            </dl>
-            <dl class="col-4">
-                <div class="overview">
-                    <dt class="overview-dt">
-                        <i class="fas fa-boxes ">TOTAL COST</i>
-                    </dt>
-                    <dd class="overview-dd">456</dd>
-                </div>
-            </dl>
-            <dl class="col-4">
-                <div class="overview">
-                    <dt class="overview-dt">
-                        <i class="fas fa-money-bill-alt">NET INCOME</i>
-                    </dt>
-                    <dd class="overview-dd">789</dd>
-                </div>
-            </dl>
+
             <!-- Activity 圖表 -->
+            <div class="row chart-container">
+                <div class="chartjs-size-monitor ">
+                    <div class="chartjs-size-monitor-expand">
+                        <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                    </div>
+                </div>
+                <canvas id="canvas" class="chartjs-render-monitor"></canvas>
+            </div>
             <!-- Transaction Website -->
-            <div class="col-6">
-                <h1>Transaction Website</h1>
-                <ul>
-                    <li>
-                        <i></i>.com
-                        <span>123 ↑22% </span>
-                    </li>
-                    <li>
-                        <i></i>.com
-                        <span>123 ↑22% </span>
-                    </li>
-                    <li>
-                        <i></i>.com
-                        <span>123 ↑22% </span>
-                    </li>
-                    <li>
-                        <i></i>.com
-                        <span>123 ↑22% </span>
-                    </li>
-                </ul>
-            </div>
-            <!-- Latest Orders -->
-            <div class="col-6">
-                <h1>Latest Orders</h1>
-                <ul>
-                    <li>
-                        <div class="latest-orders">
-                            <img src="" alt="" class="col-3">
-                            <div class="col-9">
-                                <h4>T-shirt</h4>
-                                <span>
-                                    <i>2018/06/13</i>
-                                    <p>total</p>
-                                </span>
-                                <span>
-                                    <i>Kind</i>
-                                    <p>
-                                        <strong>price</strong>
-                                    </p>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="latest-orders">
-                            <img src="" alt="" class="col-3">
-                            <div class="col-9">
-                                <h4>T-shirt</h4>
-                                <span>
-                                    <i>2018/06/13</i>
-                                    <p>total</p>
-                                </span>
-                                <span>
-                                    <i>Kind</i>
-                                    <p>
-                                        <strong>price</strong>
-                                    </p>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="latest-orders">
-                            <img src="" alt="" class="col-3">
-                            <div class="col-9">
-                                <h4>T-shirt</h4>
-                                <span>
-                                    <i>2018/06/13</i>
-                                    <p>total</p>
-                                </span>
-                                <span>
-                                    <i>Kind</i>
-                                    <p>
-                                        <strong>price</strong>
-                                    </p>
-                                </span>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="transaction">
+                        <h1 id="transaction-title">Transaction Website</h1>
+                        <ul>
+                            <li class="transaction-list">
+                                <i class="fab fa-facebook-square"></i>
+                                <span class="transaction-web-url">facebook.com</span>
+                                <div class="transaction-total">123
+                                    <span class="transaction-sales">↑22%</span>
+                                </div>
 
-                    </li>
-                </ul>
+                            </li>
+                            <li class="transaction-list">
+                                <i class="fab fa-google"></i>
+                                <span class="transaction-web-url">google.com</span>
+                                <div class="transaction-total">123
+                                    <span class="transaction-sales">↑22%</span>
+                                </div>
+                            </li>
+                            <li class="transaction-list">
+                                <i class="fas fa-shopping-basket"></i>
+                                <span class="transaction-web-url">shopify.com</span>
+                                <div class="transaction-total">123
+                                    <span class="transaction-sales">↑22%</span>
+                                </div>
+                            </li>
+                            <li class="transaction-list">
+                                <i class="fab fa-wordpress"></i>
+                                <span class="transaction-web-url">Wordpress.com</span>
+                                <div class="transaction-total">123
+                                    <span class="transaction-sales">↑22%</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Latest Orders -->
+                <div class="col-6">
+                    <div class="latest-orders">
+                        <h1 id="latest-title">Latest Orders</h1>
+                        <ul>
+                            <li class="latest-orders-list">
+                                <img src="https://photo.queenshop.com.tw/01037158/01037158.jpg" alt="" class="col-3">
+                                <div class="latest-info col-9">
+                                    <h4 class="latest-info-title">T-shirt</h4>
+                                    <div class="latest-info-menu">
+                                        <div class="latest-info-list">
+                                            <i class="fas fa-clock"> 2018/06/13</i>
+                                            <i class="fas fa-male"> Kind</i>
+                                        </div>
+                                        <div class="latest-price">
+                                            <span>
+                                                total
+                                            </span>
+                                            <span>
+                                                <strong>price</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="latest-orders-list">
+                                <img src="https://photo.queenshop.com.tw/01037073/01037073.jpg" alt="" class="col-3">
+                                <div class="latest-info col-9">
+                                    <h4 class="latest-info-title">T-shirt</h4>
+                                    <div class="latest-info-menu">
+                                        <div class="latest-info-list">
+                                            <i class="fas fa-clock"> 2018/06/13</i>
+                                            <i class="fas fa-male"> Kind</i>
+                                        </div>
+                                        <div class="latest-price">
+                                            <span>
+                                                total
+                                            </span>
+                                            <span>
+                                                <strong>price</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="latest-orders-list">
+                                <img src="https://photo.queenshop.com.tw/01023102/01023102.jpg" alt="" class="col-3">
+                                <div class="latest-info col-9">
+                                    <h4 class="latest-info-title">T-shirt</h4>
+                                    <div class="latest-info-menu">
+                                        <div class="latest-info-list">
+                                            <i class="fas fa-clock"> 2018/06/13</i>
+                                            <i class="fas fa-male"> Kind</i>
+                                        </div>
+                                        <div class="latest-price">
+                                            <span>
+                                                total
+                                            </span>
+                                            <span>
+                                                <strong>price</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
 
 
         </section>
@@ -165,3 +210,9 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js" integrity="sha256-JG6hsuMjFnQ2spWq0UiaDRJBaarzhFbUxiUTxQDA9Lk="
+    crossorigin="anonymous"></script>
+
+<script src="js/canvas.js"></script>
